@@ -5334,7 +5334,7 @@ function start() {
 		if [[ -n $list ]]; then
 			if [[ -z $domain ]]; then
 				domain="Multi"
-				dir="/var/www/Recon-gan/$domain"
+				dir="/var/www/Recon-gan/Recon/$domain"
 				called_fn_dir="$dir"/.called_fn
 			fi
 			if [[ $list == /* ]]; then
@@ -5344,7 +5344,7 @@ function start() {
 			fi
 		fi
 	else
-		dir="/var/www/Recon-gan/$domain"
+		dir="/var/www/Recon-gan/Recon/$domain"
 		called_fn_dir="$dir"/.called_fn
 	fi
 
@@ -6377,7 +6377,7 @@ case $opt_mode in
 		multi_custom
 	else
 		export DIFF=true
-		dir="/var/www/Recon-gan/$domain"
+		dir="/var/www/Recon-gan/Recon/$domain"
 		cd $dir || {
 			echo "Failed to cd directory '$dir'"
 			exit 1
